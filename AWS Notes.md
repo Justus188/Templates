@@ -5,6 +5,12 @@ To upgrade instance type, go to EC2 control panel:
 2. Instance State -> Change Instance Type
 3. Start instance and pray
 
+## Cloning into EC2 Instance
+`git clone <githublink>.git -b <branch>`
+
+Note: Password needs to be a temporary Personal Access Token:
+- Github settings > Developer settings > Personal access tokens > Generate new token
+
 ## Connections
 ### Security
 Remember to poke a hole for your IP / port to connect to the Instance.
