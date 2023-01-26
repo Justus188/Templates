@@ -1,0 +1,8 @@
+backend-fastapi-sqlalchemy/backend/test.db
+backend-fastapi-sqlalchemy/backend/**/__pycache__/
+backend-fastapi-sqlalchemy/backend/.pytest_cache
+
+backend-fastapi-pymongo/.env
+backend-fastapi-pymongo/data/db
+backend-fastapi-pymongo/backend/**/__pycache__/
+backend-fastapi-pymongo/backend/.pytest_cache

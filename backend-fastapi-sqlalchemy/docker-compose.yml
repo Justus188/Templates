@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - ${API__PORT}:8000
+    depends_on:
+      - database
+  database:
+    image: mysql:5.7
+    ports:
+      - 3305:3306
+    volumes:
+      - seed:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ${DB__DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB__PASSWORD}
+volumes:
+  seed:
