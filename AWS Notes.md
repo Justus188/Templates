@@ -6,7 +6,7 @@ To upgrade instance type, go to EC2 control panel:
 3. Start instance and pray
 
 ## Cloning into EC2 Instance
-`git clone <githublink>.git -b <branch>`
+`git clone https://username@<githublink>.git -b <branch>`
 
 Note: Password needs to be a temporary Personal Access Token:
 - Github settings > Developer settings > Personal access tokens > Generate new token
@@ -37,3 +37,15 @@ Remember to poke a hole for your IP / port to connect to the Instance.
 3. Detach using `Ctr-a-d` to let it run in background
 4. Resume screen with `screen -r session_name`
 5. Quit screen with `Ctr-a-k` within screen or `screen -X -S session_name quit` from outside screen
+
+### Docker
+- Build image (current directory = .): `docker build -t image_name directory`
+- Start container: `docker run -d --name container_name -p host_port:container_port image_name`
+- List containers: `docker ps -q`
+- Kill container: `docker kill container_name`
+- Remove container after force-stopping: `docker rm -f container_name`
+- Remove all stopped containers: `docker system prune`
+
+## Terminal syntax
+- See files in directory: `dir`
+- Delete folder with subfolders: `rm -rf folder_name`
