@@ -1,4 +1,4 @@
-# Loading from git repo
+# DiMuto Platform: pulling from Git Repo
 - Pull or `git checkout branch` to switch to branch
 - Go to services and kill mysql and start WAMP
 - `composer install` to update packages
